@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account page</title>
+    <link rel="stylesheet" href="SignUp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script>
+        function redirectToPage() 
+        {
+            const name = encodeURIComponent(document.getElementById("name").value);
+            const email = encodeURIComponent(document.getElementById("email").value);
+            const contact = encodeURIComponent(document.getElementById("contact").value);
+            
+            const userType = document.getElementById("userType").value;
+            let redirectUrl;
+            if (userType === "donor") {
+                redirectUrl = `DonorPage.html?name=${name}&email=${email}&contact=${contact}`;
+            } else if (userType === "student") {
+                redirectUrl = `StudentPage.html?name=${name}&email=${email}&contact=${contact}`;
+            }
+            window.location.href = redirectUrl;
+        }
+    </script>
+
+</head>
+<body>
+    <div class="wrapper">
+    <h1>SIGN UP</h1>
+    <form action="#" onsubmit="event.preventDefault(); redirectToPage();">
+        <div class="input-box">
+            
+            <input type="text" id="name" required>
+            <label for="name">Full Name</label>
+            
+        </div>
+        <div class="input-box">
+            
+            <input type="tel" required id="contact">
+            <label for="contact">Phone Number</label>
+            
+        </div>
+        <div class="input-box">
+            
+            <input type="email" required id="email">
+            <label for="email">Email ID</label>
+            
+        </div>
+        <div class="input-box">
+            
+            <input type="password" required id="password">
+            <label for="password">Create Password</label>
+        
+        </div>
+        <div class="input-box">
+            
+            <input type="password" required id="password">
+            <label for="password">Confirm Password</label>
+            
+        </div>
+
+        <select class="users" id="userType" name="userType" required>
+            <option value="" disabled selected>Select your option</option>
+            <option value="student">Student</option>
+            <option value="donor">Donor</option>
+        </select>
+
+        <button type="submit" class="btn">Create Account</button>
+        
+    </form>
+</div>
+</body>
+</html>

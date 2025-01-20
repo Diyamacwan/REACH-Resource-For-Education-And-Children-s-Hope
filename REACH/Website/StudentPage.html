@@ -1,0 +1,222 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+    <title>Student page</title>
+
+    <script>
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            document.getElementById("name").value = params.get("name");
+            document.getElementById("email").value = params.get("email");
+            document.getElementById("contact").value = params.get("contact");
+        }
+
+        window.onload = getQueryParams;
+    </script>
+    
+</head>
+<body>
+    <section class="container">
+        <header><h1>Student Page</h1></header>
+        <form action="#" class="form">
+            <div class="column">
+                <div class="pic">
+                    <label for="image">Photo</label>
+                    <img src="profile.png" id="profile">
+                    <input type="file" accept="image/jpeg, image/png, image/jpg" id="image" required>
+                </div>
+                <div class="input-box">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name">                               
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+                    <label for="contact">Contact</label>
+                    <input type="number" id="contact">
+                </div>
+            </div>
+            <div class="column">
+                
+                <div class="input-box">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob">
+                </div>
+            </div>
+            <div class="input-box">
+                <label for="address">Address</label>
+                <input type="text" id="address">
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label for="city">City</label>
+                    <input type="text" id="city">
+                </div>
+                <div class="input-box">
+                    <label for="state">State</label>
+                    <input type="text" id="state">
+                </div>                
+                <div class="input-box">
+                    <label for="pincode">Pin Code</label>
+                    <input type="number" id="pincode" maxlength="6">
+                </div>
+            </div>
+            <div class="column">
+                    <div class="input-box">
+                        <label for="occupation">Father's Occupation</label>
+                        <input type="text" id="occupation">
+                    </div>
+                    <div class="input-box">
+                        <label for="income">Family Annual Income (&#8377;)</label>
+                        <input type="number" id="income">
+                    </div>
+            </div>
+                <div class="input-box">
+                    <label for="story">Add Story</label>
+                    <input type="text" id="story">
+                </div>
+                <div class="input-box">
+                    <label for="achieve">Achievements</label>
+                    <input type="text" id="achieve">
+                </div>
+                <div class="result">
+                    <label for="result">Previous year Result: </label>
+                    <input type="file" accept=".pdf" id="result">
+                </div>
+                <div class="input-box">
+                    <label for="fund">Amount of fund</label>
+                    <input type="number">
+                </div>
+        </form>
+        <button type="submit" id="submit">Submit</button>
+        <button type="reset" id="reset">Reset</button>
+        <a href="index.html" class="home-btn">Home</a>
+    </section>
+
+    For Profile picture -->
+    <!-- <script>
+        let profile = document.getElementById("profile");
+        let image = document.getElementById("image");
+        image.onchange=function(){
+            profile.src = URL.createObjectURL(image.files[0]);
+        }
+    </script>
+    <!-------------------------->
+<!-- </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+    <title>Student page</title>
+
+    <script>
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            document.getElementById("name").value = params.get("name");
+            document.getElementById("email").value = params.get("email");
+            document.getElementById("contact").value = params.get("contact");
+        }
+
+        window.onload = getQueryParams;
+    </script>
+    
+</head>
+<body>
+    <section class="container">
+        <header><h1>Student Page</h1></header>
+        <button type="submit" id="submit">Save &#128190;</button>
+        <form action="#" class="form">
+            <div class="column">
+                
+                <div class="input-box">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name">                               
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+                    <label for="contact">Contact</label>
+                    <input type="number" id="contact">
+                </div>
+                 <div class="pic">
+                    <label for="image">Photo</label>
+                    <img src="profile.png" id="profile">
+                    <input type="file" accept="image/jpeg, image/png, image/jpg" id="image" required>
+                </div> 
+            </div>
+            <div class="column">
+                
+                <div class="input-box">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob">
+                </div>
+            </div>
+            <div class="input-box">
+                <label for="address">Address</label>
+                <input type="text" id="address">
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label for="city">City</label>
+                    <input type="text" id="city">
+                </div>
+                <div class="input-box">
+                    <label for="state">State</label>
+                    <input type="text" id="state">
+                </div>                
+                <div class="input-box">
+                    <label for="pincode">Pin Code</label>
+                    <input type="number" id="pincode" maxlength="6">
+                </div>
+            </div>
+            <div class="column">
+                    <div class="input-box">
+                        <label for="occupation">Father's Occupation</label>
+                        <input type="text" id="occupation">
+                    </div>
+                    <div class="input-box">
+                        <label for="income">Family Annual Income (&#8377;)</label>
+                        <input type="number" id="income">
+                    </div>
+            </div>
+                <div class="input-box">
+                    <label for="story">Add Story</label>
+                    <input type="text" id="story">
+                </div>
+                <div class="input-box">
+                    <label for="achieve">Achievements</label>
+                    <input type="text" id="achieve">
+                </div>
+                <div class="result">
+                    <label for="result">Previous year Result: </label>
+                    <input type="file" accept=".pdf" id="result">
+                </div>
+                <div class="input-box">
+                    <label for="fund">Amount of fund</label>
+                    <input type="number">
+                </div>
+        </form>
+        <button type="submit" id="submit">Submit</button>
+        <button type="reset" id="reset">Reset</button>
+        <a href="index.html" class="home-btn">Home</a>
+    </section>
+
+    <!-- For Profile picture -->
+    <script>
+        let profile = document.getElementById("profile");
+        let image = document.getElementById("image");
+        image.onchange=function(){
+            profile.src = URL.createObjectURL(image.files[0]);
+        }
+    </script>
+    <!-------------------------->
+</body>
+</html>

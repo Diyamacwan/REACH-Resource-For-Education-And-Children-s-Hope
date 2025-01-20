@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Donor Page</title>
+
+    <script>
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            document.getElementById("name").value = params.get("name");
+            document.getElementById("email").value = params.get("email");
+            document.getElementById("contact").value = params.get("contact");
+        }
+
+        window.onload = getQueryParams;
+    </script>
+
+</head>
+<body>
+        <section class="container">
+            <header><h1>Donor Page</h1></header>
+            <button type="submit" id="submit">Save &#128190;</button>
+            <form action="#" class="form">
+                <div class="column">
+                    
+                    <div class="input-box">
+                        <label for="name">Full Name</label>
+                        <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                        <input type="text" id="name">                               
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+                        <label for="contact">Contact</label>
+                        <input type="tel" id="contact">
+                    </div>
+                    <div class="pic">
+                        <label for="image">Photo</label>
+                        <img src="profile.png" id="profile">
+                        <input type="file" accept="image/jpeg, image/png, image/jpg" id="image">
+                    </div>
+                </div>
+                <div class="column">
+                    
+                    <div class="input-box">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="address">Address</label>
+                    <input type="text" id="address">
+                </div>
+                <div class="column">
+                    <div class="input-box">
+                        <label for="city">City</label>
+                        <input type="text" id="city">
+                    </div>
+                    <div class="input-box">
+                        <label for="state">State</label>
+                        <input type="text" id="state">
+                    </div>                
+                    <div class="input-box">
+                        <label for="pincode">Pin Code</label>
+                        <input type="number" id="pincode" maxlength="6">
+                    </div>
+                </div>
+            </form>
+            <button type="submit" id="submit">Submit</button>
+            <button type="reset" id="reset">Update</button>
+            <a href="index.html" class="home-btn">Home</a>
+        </section>
+
+</body>
+</html>
